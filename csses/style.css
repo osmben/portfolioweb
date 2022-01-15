@@ -1,0 +1,530 @@
+/* i'll greate a portfolio website in this website
+ i'll use only one page and my photo width some good hovers
+ 
+ ---first my first page then with my photo and some 
+ ---some sirvices then i offer
+ ---some works
+ ---les't works together or contact
+ ---finaly the footer
+ 
+so let's start <3
+ 
+ */
+
+ *{
+
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+ }
+
+ a{
+     text-decoration: none;
+ }
+
+
+ :root{
+     --blue:#085cac;
+     --white:#fff;
+     --lightblue:#4589c0;
+ }
+
+
+/* ----------------------------here is the header section------------------------------------------- */
+ header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 12px 7%;
+    width: 100%;
+    height: 60px;
+    background: var(--white);
+    position: fixed;
+    z-index: 99999;
+    position: relative;
+ }
+ header .header-logo{
+    font-size: 1.9em; /*i use the em you make elements linked with the body (16px) so 16 x 1.9em = number in px*/
+     color: var(--lightblue);
+     text-transform: capitalize;
+ }
+ 
+
+ header .navigation{
+     padding: 12px 0;
+     justify-content: flex-start;
+ }
+ header .navigation a{
+     margin: 0 10px;
+     padding: 10px 10px;
+     font-size: 1.5em;
+     color: var(--blue);
+    font-weight:700;
+    text-transform:capitalize;
+ }
+
+ header .navigation a:hover{
+     opacity: 0.5;
+ }
+ input[type="checkbox"]{
+    display: none;
+}
+
+ section{ /*this is all the section in the website */
+     padding:100px 100px;
+
+ }
+ header label{
+     display: none;
+ }
+
+ .main{
+    position:relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(bg2.jpg) ;
+    width: 100%;
+    height: 100vh;
+    background-position: center right ;
+    background-attachment: fixed;
+
+ }
+.main h2{
+    color:var(--white);
+    font-size:2em;
+    font-weight:500;
+}
+
+
+.main h2 span{
+    font-size:80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: var(--blue);
+    text-transform: capitalize;
+
+}
+.main h3{
+    font-size: 30px;
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    margin-top: 17px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.main p{
+    color: var(--white);
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0.9375em 1.1875em;
+    height: 40px;
+    line-height:12px;
+    background: var(--lightblue);
+    border-radius:9px ;
+    text-transform: capitalize;
+    margin-bottom: 22px;
+    cursor:pointer;
+    display: inline-block;
+    font-weight: 600;
+    transition:0.4s ease;
+}
+ .main p:hover{
+    background-color: var(--blue);
+    transform: scale(1.1);
+    font-weight: 600;
+ }
+.main-icons{
+    width: 22em;
+
+}
+.main-icons i{
+    font-size: 1.7em;
+    color: var(--white);
+    margin-right: 19px;
+}
+.main-icons i:hover{
+    color: turquoise;
+    transform: scale(1.3);
+}
+.main-image{
+
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ .main-image img{
+     width: 100%;
+     object-fit: cover;
+ }
+
+/* here is the servise section */
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: var(--lightblue);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    background-color:#fff;
+    width: 21.25em;
+    box-shadow:0 7px 32px rgb(0 0 0 / 59%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 35px;
+    transition: .4s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    color: var(--lightblue);
+    font-size: 4.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.info{
+    text-align: center;
+}
+
+.info h3{
+    font-size:1.4em;
+    color: #4589c0;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    
+}
+
+.info p{
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+#holder{
+    background: #000;
+}
+
+.card-image{
+    width:21.25em ;
+  
+}
+#holder .card{
+    padding: 0;
+  
+}
+.card-image img{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+}
+.card:hover .card-image img{
+    opacity: 0.9;
+}
+.card-info p{
+    padding: 12px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #525151;
+    letter-spacing: 1;
+    text-transform: capitalize;
+}
+
+.desc-info{
+    padding:0 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc-info span{
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 15px;
+}
+
+.desc-info a{
+    color: var(--blue);
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 900;
+    margin-top: 3px;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.desc-info a:hover{
+    color: purple;
+}
+
+.contact-items{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-bottom{
+    text-align: center;
+}
+.card-bottom h3{
+    margin-bottom: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.card-bottom p{
+    font-size: 1.5em;
+
+}
+
+/* here is the last step which is footer */
+
+.footer{
+    background:#000000;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap:wrap ;
+}
+
+.rights{
+    color: var(--white);
+    user-select: red;
+}
+.rights span{
+    color: var(--blue);
+    font-size: 25px;
+}
+
+.wrap i{
+    color: var(--white);
+    font-size: 1.3em;
+    margin-right: 20px;
+}
+
+.wrap i:hover{
+    transform: scale(1.1);
+}
+
+.taker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.child{
+    width: 50%;
+}
+input[type="email"]{
+    width: 49%;
+    height: 30px;
+    outline: none;
+    background: var(--white);
+   box-shadow:  0 7px 12px rgb(0 0 0 / 59%);
+   border: none;
+   margin-bottom: 20px;
+    padding: 0 20px;
+}
+input[type="text"]{
+    width:100%;
+    height: 30px;
+    outline: none;
+    background: var(--white);
+   box-shadow:  0 7px 12px rgb(0 0 0 / 59%);
+   border: none;
+   margin-bottom: 20px;
+    padding: 0 20px;
+}
+textarea{
+    width: 100%;
+    height: 130px;
+    outline: none;
+    background: var(--white);
+   box-shadow:  0 7px 12px rgb(0 0 0 / 59%);
+   border: none;
+   margin-bottom: 20px;
+    padding: 0 20px;
+}
+.btm{
+   width: 150px;
+   height: 38px;
+   background: var(--blue);
+   border: none;
+   border-radius:8px ;
+   font-size: 16px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: var(--white);
+    cursor: pointer;
+    transition: .4s ease;
+}
+.btm:hover{
+    transform: scale(1.1);
+    background: blue;
+}
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+      
+        position: fixed;
+    }
+    .header-logo h2{
+        font-size: 2.5em;
+    }
+  
+    .navigation {
+      position: absolute;
+      top:89px;
+      left: -5000px;
+      border-top:1px solid var(--blue) ;
+      background: var(--white);
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        font-size: 25px;
+        align-items: center;
+        line-height: 2;
+        transition:all .1s ease;
+    }
+     header input[type="checkbox"]:checked + .navigation {
+         left: 0;
+         transition:all .1s ease;
+     }
+   
+    header label{
+        display: block;
+    }
+    header label i{
+        font-size: 3.1em;
+        cursor: pointer;
+    }
+
+    input[type="checkbox"]{
+        display: none;
+    }
+    .title{
+        font-size: 2.8em;
+    width: 100%;
+
+    }
+    section{
+        padding: 30px 20px;
+    }
+
+    .main h2{
+        font-size: 3.6em;
+    }
+    .main h2 span{
+        font-size: 2.6em;
+    }
+    .main h3{
+        font-size: 2em;
+    }
+    .main p{
+        font-size: 18px;
+    
+        text-align: center;
+        padding: 1.3em 1.1875em;
+        line-height:1px;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .main-icons i{
+        font-size: 2em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main{
+        background-position:center right ;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .card-image img{
+        width: 100%;
+    }
+  
+
+}
+
+@media (max-width:1000px){
+   .card{
+       width: 70%;
+   }
+   header{
+      height: 100px;
+   }
+   body{
+       font-size: 20px;
+   }
+.card .icon{
+    font-size: 7em;
+}
+
+.card h3{   
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+    .card p{
+        font-size: 1.8em;
+        line-height: 2;
+
+    }
+    .card-image{
+        width: 100%;
+    }
+    .card-image img{
+        width: 100%;
+    }
+    .desc-info a{
+        margin-bottom: 30px;
+        font-size: 1em;
+    }
+   
+    input[type="email"]{
+        width: 100%;
+    }
+   
+}
+@media (max-width:860px){
+    body{
+        font-size: 10px;
+    }
+}
+
